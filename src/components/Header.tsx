@@ -1,6 +1,7 @@
 import { Link } from "@material-ui/core";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs/Breadcrumbs";
 import * as React from "react";
+import { ReactComponent as Logo } from "../images/Interior design Latvalahti_logo.svg";
 
 const header = {
   backgroundColor: "#fdfdfd",
@@ -8,7 +9,7 @@ const header = {
   display: "flex",
   alignContent: "center",
   justifyContent: "space-between",
-  padding: 200,
+  padding: 100,
   p: 3,
 };
 
@@ -19,7 +20,7 @@ const text = {
 export const Header = () => {
   return (
     <header style={header}>
-      <h1>Design Latvalahti</h1>
+      <Logo height={300} width={300} />
       <Breadcrumbs aria-label="breadcrumb" style={text}>
         <Link
           color="inherit"
