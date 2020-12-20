@@ -44,6 +44,14 @@ export const Header = () => {
         >
           Gallery
         </Link>
+        <Link
+          color="inherit"
+          href="/contact"
+          onClick={() => console.log("Contact")}
+          aria-current="page"
+        >
+          Contact
+        </Link>
       </Breadcrumbs>
     </header>
   );
