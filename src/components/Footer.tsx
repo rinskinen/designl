@@ -1,20 +1,21 @@
 import { Link } from "@material-ui/core";
 import * as React from "react";
+import styled from "styled-components";
 
-const footer = {
-  backgroundColor: "#fdfdfd",
-  fontFamily: "Quicksand",
-  display: "grid",
-  alignContent: "center",
-  justifyContent: "center",
-  padding: 200,
-  p: 3,
-  textAlign: "center" as "center",
-};
+const StyledFooter = styled.footer`
+  background-color: #fdfdfd;
+  font-family: Quicksand;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 200px;
+  p: 3px;
+  text-align: center;
+`;
 
 export const Footer = () => {
   return (
-    <div style={footer}>
+    <StyledFooter>
       <div>
         <p>Interior Design Latvalahti</p>
         <p>
@@ -30,6 +31,6 @@ export const Footer = () => {
           Instagram
         </Link>
       </div>
-    </div>
+    </StyledFooter>
   );
 };

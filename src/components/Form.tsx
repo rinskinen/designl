@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
+import styled from "styled-components";
 
 type FormData = {
   name: string;
@@ -7,35 +8,76 @@ type FormData = {
   text: string;
 };
 
-const label = {
-  fontFamily: "Quicksand",
-};
+const StyledForm = styled.form`
+  width: 30%;
+`;
 
-const form = {
-  display: "flex",
-  alignContent: "center",
-  justifyContent: "center",
-};
+const BasicInfo = styled.div`
+  margin-bottom: 8px;
+`;
+
+const StyledLabel = styled.label`
+  font-family: Quicksand;
+  font-size: 24px;
+  padding: 12px;
+`;
+
+const StyledInput = styled.input`
+  font-family: Quicksand;
+  font-size: 20px;
+  padding: 2px;
+  border-radius: 8px;
+  border-width: 1px;
+`;
+
+const StyledTextArea = styled.textarea`
+  font-family: Quicksand;
+  font-size: 20px;
+  padding: 2px;
+  border-radius: 8px;
+  border-width: 1px;
+  margin: 12px;
+`;
+
+const StyledButton = styled.button`
+  font-family: Quicksand;
+  font-size: 24px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 12px;
+`;
 
 export default function Form() {
-  const { register, setValue, handleSubmit, errors } = useForm<FormData>();
+  const { register, handleSubmit } = useForm<FormData>();
   const onSubmit = handleSubmit(({ name, email, text }) => {
     console.log(name, email, text);
   });
 
   return (
-    <form style={form} onSubmit={onSubmit}>
-      <div>
-        <label style={label}>Nimesi:</label>
-        <input name="name" ref={register} />
-        <label style={label}>Sähköpostiosoitteesi:</label>
-        <input name="email" ref={register} />
-      </div>
-      <label style={label}>Kerro kuinka voin auttaa?</label>
-      <textarea id="text" name="text" rows={12} cols={50} ref={register} />
-      <button type="button" onClick={onSubmit}>
+    <StyledForm onSubmit={onSubmit}>
+      <BasicInfo>
+        <StyledLabel>Nimesi:</StyledLabel>
+        <StyledInput name="name" ref={register} />
+        <br />
+      </BasicInfo>
+      <BasicInfo>
+        <StyledLabel>Sähköpostiosoitteesi:</StyledLabel>
+        <StyledInput name="email" ref={register} />
+        <br />
+      </BasicInfo>
+      <StyledLabel>Kerro kuinka voin auttaa?</StyledLabel>
+      <br />
+      <StyledTextArea
+        id="text"
+        name="text"
+        rows={12}
+        cols={50}
+        ref={register}
+      />
+      <br />
+      <StyledButton type="button" onClick={onSubmit}>
         Lähetä
-      </button>
-    </form>
+      </StyledButton>
+    </StyledForm>
   );
 }

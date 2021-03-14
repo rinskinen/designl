@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
@@ -7,10 +6,17 @@ import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Contact } from "./components/Contact";
+import styled from "styled-components";
+
+const AppStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
 
 const App = () => {
   return (
-    <div className="App" style={style}>
+    <AppStyled>
       <Header />
       <Router>
         <Switch>
@@ -29,7 +35,7 @@ const App = () => {
         </Switch>
       </Router>
       <Footer />
-    </div>
+    </AppStyled>
   );
 };
 
