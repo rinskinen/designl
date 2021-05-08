@@ -1,12 +1,6 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-
-type FormData = {
-  name: string;
-  email: string;
-  text: string;
-};
+import emailjs from 'emailjs-com';
 
 const StyledForm = styled.form`
   width: 25%;
@@ -62,44 +56,54 @@ const StyledButton = styled.button`
 `;
 
 export default function Form() {
-  const { register, handleSubmit } = useForm<FormData>();
-  const onSubmit = handleSubmit(({ name, email, text }) => {
-    console.log(name, email, text);
-  });
+  const sendMessage = (event: any) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID || '',
+        process.env.TEMPLATE_ID || '',
+        event.target,
+        process.env.USER_ID,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Viestisi lähetetty, kiitos!');
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+  };
 
   return (
-    <StyledForm onSubmit={onSubmit}>
+    <StyledForm onSubmit={sendMessage}>
       <BasicInfo>
         <StyledLabel>Etu- ja sukunimesi: *</StyledLabel>
-        <StyledInput name="name" ref={register} required />
+        <StyledInput name="name" required />
         <br />
       </BasicInfo>
       <BasicInfo>
         <StyledLabel>Sähköpostiosoitteesi: *</StyledLabel>
-        <StyledInput name="email" ref={register} required />
+        <StyledInput name="email" required />
         <br />
       </BasicInfo>
       <BasicInfo>
         <StyledLabel>Puhelinnumerosi:</StyledLabel>
-        <StyledInput name="phoneNumber" ref={register} />
+        <StyledInput name="phoneNumber" />
         <br />
       </BasicInfo>
       <StyledLabel>Viestisi: </StyledLabel>
       <br />
       <StyledTextAreaDiv>
-        <StyledTextArea
-          id="text"
-          name="text"
-          rows={12}
-          cols={50}
-          ref={register}
-        />
+        <StyledTextArea id="text" name="text" rows={12} cols={50} />
       </StyledTextAreaDiv>
       <StyledInfo>
         <p>* pakolliset tiedot</p>
       </StyledInfo>
       <br />
-      <StyledButton type="button" onClick={onSubmit}>
+      <StyledButton type="submit" value="Send">
         Lähetä
       </StyledButton>
     </StyledForm>

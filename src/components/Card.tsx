@@ -13,6 +13,10 @@ interface Props {
   text?: string;
   image?: any;
 }
+
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
+
 const StyledCard = styled.div`
   max-width: 400px;
   text-align: center;
@@ -38,6 +42,8 @@ const StyledModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: ${screenHeight}px;
+  max-width: ${screenWidth}px;
 `;
 
 export const PortfolioCard: React.FC<Props> = ({
@@ -57,11 +63,7 @@ export const PortfolioCard: React.FC<Props> = ({
           </CardMedia>
           <CardContent>
             <StyledTitle>{title}</StyledTitle>
-            {text && (
-              <p>
-                <StyledText>{text}</StyledText>
-              </p>
-            )}
+            <StyledText>{text}</StyledText>
           </CardContent>
         </CardActionArea>
       </Card>
