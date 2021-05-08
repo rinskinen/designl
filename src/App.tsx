@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import { Home } from './components/Home';
 import { About } from './components/About';
-import { Gallery } from './components/Gallery';
+import { Services } from './components/Services';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Contact } from './components/Contact';
@@ -29,16 +29,16 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/aboutme">
+          <Route path="/suunnittelija">
             <About />
           </Route>
-          <Route path="/gallery">
-            <Gallery />
+          <Route path="/palvelut">
+            <Services />
           </Route>
           <Route path="/portfolio">
             <Portfolio />
           </Route>
-          <Route path="/contact">
+          <Route path="/otayhteyttä">
             <Contact />
           </Route>
         </Switch>

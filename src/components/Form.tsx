@@ -9,11 +9,13 @@ type FormData = {
 };
 
 const StyledForm = styled.form`
-  width: 30%;
+  width: 25%;
 `;
 
 const BasicInfo = styled.div`
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
 `;
 
 const StyledLabel = styled.label`
@@ -25,18 +27,30 @@ const StyledLabel = styled.label`
 const StyledInput = styled.input`
   font-family: Quicksand;
   font-size: 20px;
-  padding: 2px;
+  padding: 4px;
   border-radius: 8px;
   border-width: 1px;
+  flex-grow: 2;
+`;
+
+const StyledTextAreaDiv = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 
 const StyledTextArea = styled.textarea`
   font-family: Quicksand;
   font-size: 20px;
-  padding: 2px;
+  padding: 8px;
   border-radius: 8px;
   border-width: 1px;
-  margin: 12px;
+  margin-left: 12px;
+  margin-top: 8px;
+  flex-grow: 3;
+`;
+
+const StyledInfo = styled.div`
+  padding-left: 12px;
 `;
 
 const StyledButton = styled.button`
@@ -56,12 +70,12 @@ export default function Form() {
   return (
     <StyledForm onSubmit={onSubmit}>
       <BasicInfo>
-        <StyledLabel>Etu- ja sukunimesi:</StyledLabel>
+        <StyledLabel>Etu- ja sukunimesi: *</StyledLabel>
         <StyledInput name="name" ref={register} required />
         <br />
       </BasicInfo>
       <BasicInfo>
-        <StyledLabel>Sähköpostiosoitteesi:</StyledLabel>
+        <StyledLabel>Sähköpostiosoitteesi: *</StyledLabel>
         <StyledInput name="email" ref={register} required />
         <br />
       </BasicInfo>
@@ -70,15 +84,20 @@ export default function Form() {
         <StyledInput name="phoneNumber" ref={register} />
         <br />
       </BasicInfo>
-      <StyledLabel>Kerro kuinka voin auttaa?</StyledLabel>
+      <StyledLabel>Viestisi: </StyledLabel>
       <br />
-      <StyledTextArea
-        id="text"
-        name="text"
-        rows={12}
-        cols={50}
-        ref={register}
-      />
+      <StyledTextAreaDiv>
+        <StyledTextArea
+          id="text"
+          name="text"
+          rows={12}
+          cols={50}
+          ref={register}
+        />
+      </StyledTextAreaDiv>
+      <StyledInfo>
+        <p>* pakolliset tiedot</p>
+      </StyledInfo>
       <br />
       <StyledButton type="button" onClick={onSubmit}>
         Lähetä

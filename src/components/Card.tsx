@@ -1,35 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Card,
   CardActionArea,
   CardMedia,
   CardContent,
-  CardActions,
-  Button,
+  Modal,
 } from '@material-ui/core';
+import styled from 'styled-components';
 
 interface Props {
   title: string;
   text?: string;
+  image?: any;
 }
+const StyledCard = styled.div`
+  max-width: 400px;
+  text-align: center;
+`;
 
-export const PortfolioCard: React.FC<Props> = ({ title, text }) => {
+const StyledImage = styled.div`
+  //   height: 140px;
+`;
+
+const StyledTitle = styled.label`
+  font-family: Quicksand;
+  font-size: 24px;
+  padding: 12px;
+`;
+
+const StyledText = styled.p`
+  font-family: Quicksand;
+  font-size: 16px;
+  padding: 12px;
+`;
+
+const StyledModal = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const PortfolioCard: React.FC<Props> = ({
+  title,
+  text,
+  image,
+}) => {
+  const [open, setOpen] = useState(false);
   return (
-    <div>
+    <StyledCard onClick={() => setOpen(true)}>
       <Card>
         <CardActionArea>
-          <CardMedia image="../images/kuva1.jpg" title="Kuva1" />
+          <CardMedia>
+            <StyledImage>
+              <img src={image} alt={title} height={200} />
+            </StyledImage>
+          </CardMedia>
           <CardContent>
-            <h2>{title}</h2>
-            {text && <p>{text}</p>}
+            <StyledTitle>{title}</StyledTitle>
+            {text && (
+              <p>
+                <StyledText>{text}</StyledText>
+              </p>
+            )}
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Lisää
-          </Button>
-        </CardActions>
       </Card>
-    </div>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        onClick={() => setOpen(false)}
+      >
+        <StyledModal>
+          <img src={image} alt={title} />
+        </StyledModal>
+      </Modal>
+    </StyledCard>
   );
 };

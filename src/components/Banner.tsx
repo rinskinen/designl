@@ -27,7 +27,7 @@ export const Banner: React.FC<Props> = ({ text }) => {
   return (
     <div style={banner}>
       <p>{text}</p>
-      <Link href="/aboutme" style={link}>
+      <Link href="/suunnittelija" style={link}>
         Lisää minusta
       </Link>
     </div>

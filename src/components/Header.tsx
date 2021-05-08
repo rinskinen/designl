@@ -38,22 +38,22 @@ export const Header = () => {
             href="/"
             onClick={() => console.log('Kotisivulle')}
           >
-            Home
+            Koti
           </Link>
           <Link
             color="inherit"
-            href="/aboutme"
-            onClick={() => console.log('About me')}
+            href="/suunnittelija"
+            onClick={() => console.log('Suunnittelija')}
           >
-            About me
+            Suunnittelija
           </Link>
           <Link
             color="inherit"
-            href="/gallery"
-            onClick={() => console.log('Gallery')}
+            href="/palvelut"
+            onClick={() => console.log('Palvelut')}
             aria-current="page"
           >
-            Gallery
+            Palvelut
           </Link>
           <Link
             color="inherit"
@@ -65,11 +65,11 @@ export const Header = () => {
           </Link>
           <Link
             color="inherit"
-            href="/contact"
-            onClick={() => console.log('Contact')}
+            href="/otayhteyttä"
+            onClick={() => console.log('Ota yhteyttä')}
             aria-current="page"
           >
-            Contact
+            Ota yhteyttä
           </Link>
         </Breadcrumbs>
       </Col>
