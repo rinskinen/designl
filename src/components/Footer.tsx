@@ -1,6 +1,6 @@
-import { Link } from "@material-ui/core";
-import * as React from "react";
-import styled from "styled-components";
+import { Link } from '@material-ui/core';
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   background-color: #fdfdfd;

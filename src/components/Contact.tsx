@@ -1,6 +1,6 @@
-import * as React from "react";
-import Form from "./Form";
-import styled from "styled-components";
+import React from 'react';
+import Form from './Form';
+import styled from 'styled-components';
 
 const ContactStyled = styled.div`
   background-color: #fdfdfd;

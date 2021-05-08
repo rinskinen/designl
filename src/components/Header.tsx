@@ -1,8 +1,8 @@
-import { Link } from "@material-ui/core";
-import Breadcrumbs from "@material-ui/core/Breadcrumbs/Breadcrumbs";
-import React from "react";
-import { ReactComponent as Logo } from "../images/Interior design Latvalahti_logo.svg";
-import styled from "styled-components";
+import { Link } from '@material-ui/core';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs/Breadcrumbs';
+import React from 'react';
+import { ReactComponent as Logo } from '../images/Interior design Latvalahti_logo.svg';
+import styled from 'styled-components';
 
 const HeaderStyled = styled.h1`
   backgroundcolor: #fdfdfd;
@@ -22,7 +22,7 @@ const Col = styled.div<ColProps>`
 `;
 
 const text = {
-  fontFamily: "Quicksand",
+  fontFamily: 'Quicksand',
 };
 
 export const Header = () => {
@@ -36,29 +36,37 @@ export const Header = () => {
           <Link
             color="inherit"
             href="/"
-            onClick={() => console.log("Kotisivulle")}
+            onClick={() => console.log('Kotisivulle')}
           >
             Home
           </Link>
           <Link
             color="inherit"
             href="/aboutme"
-            onClick={() => console.log("About me")}
+            onClick={() => console.log('About me')}
           >
             About me
           </Link>
           <Link
             color="inherit"
             href="/gallery"
-            onClick={() => console.log("Gallery")}
+            onClick={() => console.log('Gallery')}
             aria-current="page"
           >
             Gallery
           </Link>
           <Link
             color="inherit"
+            href="/portfolio"
+            onClick={() => console.log('Portfolio')}
+            aria-current="page"
+          >
+            Portfolio
+          </Link>
+          <Link
+            color="inherit"
             href="/contact"
-            onClick={() => console.log("Contact")}
+            onClick={() => console.log('Contact')}
             aria-current="page"
           >
             Contact

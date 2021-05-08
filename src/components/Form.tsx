@@ -1,6 +1,6 @@
-import * as React from "react";
-import { useForm } from "react-hook-form";
-import styled from "styled-components";
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import styled from 'styled-components';
 
 type FormData = {
   name: string;
@@ -56,13 +56,18 @@ export default function Form() {
   return (
     <StyledForm onSubmit={onSubmit}>
       <BasicInfo>
-        <StyledLabel>Nimesi:</StyledLabel>
-        <StyledInput name="name" ref={register} />
+        <StyledLabel>Etu- ja sukunimesi:</StyledLabel>
+        <StyledInput name="name" ref={register} required />
         <br />
       </BasicInfo>
       <BasicInfo>
         <StyledLabel>Sähköpostiosoitteesi:</StyledLabel>
-        <StyledInput name="email" ref={register} />
+        <StyledInput name="email" ref={register} required />
+        <br />
+      </BasicInfo>
+      <BasicInfo>
+        <StyledLabel>Puhelinnumerosi:</StyledLabel>
+        <StyledInput name="phoneNumber" ref={register} />
         <br />
       </BasicInfo>
       <StyledLabel>Kerro kuinka voin auttaa?</StyledLabel>
