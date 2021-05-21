@@ -1,3 +1,6 @@
-import React from 'react';
+export const getWidthString = (span: number) => {
+  if (!span) return;
 
-export const getWidthString = () => {};
+  const width = (span / 12) * 100;
+  return `width: ${width}%`;
+};

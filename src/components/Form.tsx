@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import emailjs from 'emailjs-com';
 
 const StyledForm = styled.form`
-  width: 25%;
+  width: 50%;
 `;
 
 const BasicInfo = styled.div`
