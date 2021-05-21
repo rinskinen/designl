@@ -4,11 +4,11 @@ import React from 'react';
 import { ReactComponent as Logo } from '../images/Interior design Latvalahti_logo.svg';
 import styled from 'styled-components';
 
-const HeaderStyled = styled.h1`
-  backgroundcolor: #fdfdfd;
+const HeaderStyled = styled.div`
+  background-color: #fdfdfd;
   font-family: Quicksand;
   display: flex;
-  aligncontent: center;
+  align-content: center;
   padding: 100;
   p: 3;
 `;
@@ -38,7 +38,7 @@ export const Header = () => {
             href="/"
             onClick={() => console.log('Kotisivulle')}
           >
-            Koti
+            Etusivu
           </Link>
           <Link
             color="inherit"

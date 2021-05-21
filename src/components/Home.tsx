@@ -13,7 +13,8 @@ const home = {
 export const Home = () => {
   return (
     <div style={home}>
-      <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkitiloihin. Esteettisiä, toimivia ja ajattomia tiloja, joissa on hyvä olla." />
+      <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkitiloihin." />
+      <Banner text="Esteettisiä, toimivia ja ajattomia tiloja, joissa on hyvä olla." />
     </div>
   );
 };

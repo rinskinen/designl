@@ -17,7 +17,7 @@ const text = {
 export const About = () => {
   return (
     <div style={about}>
-      <img src={Dima} alt="self portrait" />
+      <img src={Dima} alt="self portrait" height={800} />
       <div style={text}>
         <p>Hei! Tervetuloa sivuilleni!</p>
         <br />

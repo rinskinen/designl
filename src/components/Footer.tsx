@@ -19,17 +19,17 @@ export const Footer = () => {
       <div>
         <p>Interior Design Latvalahti</p>
         <p>
-          <Link href="mailto: dima.latvalahti@gmail.com">
-            dima.latvalahti@gmail.com
+          <Link href="mailto: interior@designlatvalahti.fi ">
+            interior@designlatvalahti.fi
           </Link>
         </p>
         <p>
           <Link href="tel: 0453565554">0453565554</Link>
         </p>
-        <p>Y-tunnus: 2361455-8</p>
         <Link href="https://www.instagram.com/casalautaajabetonia/?hl=fi">
           Instagram
         </Link>
+        <p>Y-tunnus: 2361455-8</p>
       </div>
     </StyledFooter>
   );

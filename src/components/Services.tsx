@@ -8,13 +8,12 @@ const StyledLabel = styled.label`
 
 const StyledCard = styled.div`
   align-self: center;
-  background-color: #dbdbdb;
   display: grid;
   aligcontent: center;
   justifycontent: center;
   padding: 50px;
   margin: 100px;
-  border-radius: 8px;
+  border: 1.5px solid black;
 `;
 
 export const Services = () => {

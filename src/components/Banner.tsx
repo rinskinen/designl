@@ -1,18 +1,17 @@
-import { Link } from '@material-ui/core';
 import React from 'react';
+import styled from 'styled-components';
 
-const banner = {
-  alignSelf: 'center',
-  backgroundColor: '#dbdbdb',
-  fontFamily: 'Quicksand',
-  fontSize: 24,
-  display: 'grid',
-  aligContent: 'center',
-  justifyContent: 'center',
-  padding: 50,
-  margin: 100,
-  borderRadius: 8,
-};
+const StyledCard = styled.div`
+  align-self: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+  margin: 100px;
+  border: 1.5px solid black;
+  font-family: 'Quicksand';
+  font-size: 24px;
+`;
 
 const link = {
   textAlign: 'center' as 'center',
@@ -25,11 +24,8 @@ interface Props {
 
 export const Banner: React.FC<Props> = ({ text }) => {
   return (
-    <div style={banner}>
+    <StyledCard>
       <p>{text}</p>
-      <Link href="/suunnittelija" style={link}>
-        Lisää minusta
-      </Link>
-    </div>
+    </StyledCard>
   );
 };
