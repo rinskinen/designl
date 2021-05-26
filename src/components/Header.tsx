@@ -33,40 +33,25 @@ export const Header = () => {
       </Col>
       <Col size={1}>
         <Breadcrumbs aria-label="breadcrumb" style={text}>
-          <Link
-            color="inherit"
-            href="/"
-            onClick={() => console.log('Kotisivulle')}
-          >
+          <Link color="inherit" href="/">
             Etusivu
           </Link>
-          <Link
-            color="inherit"
-            href="/suunnittelija"
-            onClick={() => console.log('Suunnittelija')}
-          >
+          <Link color="inherit" href="/suunnittelija">
             Suunnittelija
           </Link>
-          <Link
-            color="inherit"
-            href="/palvelut"
-            onClick={() => console.log('Palvelut')}
-            aria-current="page"
-          >
+          <Link color="inherit" href="/palvelut" aria-current="page">
             Palvelut
           </Link>
-          <Link
+          {/* <Link
             color="inherit"
             href="/portfolio"
-            onClick={() => console.log('Portfolio')}
             aria-current="page"
           >
             Portfolio
-          </Link>
+          </Link> */}
           <Link
             color="inherit"
             href="/otayhteyttä"
-            onClick={() => console.log('Ota yhteyttä')}
             aria-current="page"
           >
             Ota yhteyttä

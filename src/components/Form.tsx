@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import emailjs from 'emailjs-com';
+import { useForm } from 'react-hook-form';
 
 const StyledForm = styled.form`
-  width: 50%;
+  width: 100%;
 `;
 
 const BasicInfo = styled.div`
@@ -56,51 +57,66 @@ const StyledButton = styled.button`
 `;
 
 export default function Form() {
-  const sendMessage = (event: any) => {
-    event.preventDefault();
-
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const sendMessage = () => {
     emailjs
       .sendForm(
-        process.env.SERVICE_ID || '',
-        process.env.TEMPLATE_ID || '',
-        event.target,
-        process.env.USER_ID,
+        process.env.REACT_APP_SERVICE_ID || '',
+        process.env.REACT_APP_TEMPLATE_ID || '',
+        '#contactForm',
+        process.env.REACT_APP_USER_ID,
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert('Viestisi lähetetty, kiitos!');
-        },
-        (error) => {
-          console.log(error.text);
-        },
+      .then(() => {
+        alert('Viestisi lähetetty, kiitos!');
+        reset();
+      })
+      .catch((error) =>
+        alert(
+          'Valitettavasti jotain meni pieleen, lähetäthän uuden viestin. Voit olla minuun myös suoraan yhteydessä sähköpostitse tai puhelimitse. Yhteystiedot löytyvät sivun alalaidasta.',
+        ),
       );
   };
 
   return (
-    <StyledForm onSubmit={sendMessage}>
+    <StyledForm onSubmit={handleSubmit(sendMessage)} id="contactForm">
       <BasicInfo>
         <StyledLabel>Etu- ja sukunimesi: *</StyledLabel>
-        <StyledInput name="name" required />
+        <StyledInput {...register('name', { required: true })} />
         <br />
       </BasicInfo>
       <BasicInfo>
-        <StyledLabel>Sähköpostiosoitteesi: *</StyledLabel>
-        <StyledInput name="email" required />
+        <StyledLabel>Sähköpostiosoitteesi: **</StyledLabel>
+        <StyledInput
+          {...register('email', {
+            required: true,
+            pattern: /^\S+@\S+\.\S/,
+          })}
+        />
         <br />
       </BasicInfo>
       <BasicInfo>
         <StyledLabel>Puhelinnumerosi:</StyledLabel>
-        <StyledInput name="phoneNumber" />
+        <StyledInput {...register('phoneNumber')} />
         <br />
       </BasicInfo>
       <StyledLabel>Viestisi: </StyledLabel>
       <br />
       <StyledTextAreaDiv>
-        <StyledTextArea id="text" name="text" rows={12} cols={50} />
+        <StyledTextArea {...register('text')} rows={12} cols={50} />
       </StyledTextAreaDiv>
       <StyledInfo>
-        <p>* pakolliset tiedot</p>
+        {errors.name && <p>* syötäthän nimesi</p>}
+        {errors.email && (
+          <p>
+            ** syötäthän sähköpostiosoitteesi oikeassa muodossa, jotta
+            voin vastata yhteydenottoosi
+          </p>
+        )}
       </StyledInfo>
       <br />
       <StyledButton type="submit" value="Send">

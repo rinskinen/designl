@@ -11,7 +11,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Contact } from './components/Contact';
 import styled from 'styled-components';
-import { Portfolio } from './components/Portfolio';
+//import { Portfolio } from './components/Portfolio';
 
 const AppStyled = styled.div`
   display: flex;
@@ -35,9 +35,9 @@ const App = () => {
           <Route path="/palvelut">
             <Services />
           </Route>
-          <Route path="/portfolio">
+          {/* <Route path="/portfolio">
             <Portfolio />
-          </Route>
+          </Route> */}
           <Route path="/otayhteyttä">
             <Contact />
           </Route>

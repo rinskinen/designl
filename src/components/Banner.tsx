@@ -13,11 +13,6 @@ const StyledCard = styled.div`
   font-size: 24px;
 `;
 
-const link = {
-  textAlign: 'center' as 'center',
-  paddingTop: 30,
-};
-
 interface Props {
   text: string;
 }
