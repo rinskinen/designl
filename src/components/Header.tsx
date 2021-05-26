@@ -28,10 +28,10 @@ const text = {
 export const Header = () => {
   return (
     <HeaderStyled>
-      <Col size={2}>
+      <Col size={2} style={{ paddingLeft: 60 }}>
         <Logo height={300} width={300} />
       </Col>
-      <Col size={1}>
+      <Col size={1} style={{ paddingTop: 50 }}>
         <Breadcrumbs aria-label="breadcrumb" style={text}>
           <Link color="inherit" href="/">
             Etusivu

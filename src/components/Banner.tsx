@@ -7,7 +7,10 @@ const StyledCard = styled.div`
   align-content: center;
   justify-content: center;
   padding: 50px;
-  margin: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border: 1.5px solid black;
   font-family: 'Quicksand';
   font-size: 24px;
