@@ -4,7 +4,14 @@ import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
 
 const StyledForm = styled.form`
-  width: 100%;
+  @media only screen and (min-width: 992px) {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 50%;
+  }
+  padding-bottom: 100px;
 `;
 
 const BasicInfo = styled.div`
