@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { StyledLine } from './Services';
 
 const StyledCard = styled.div`
   align-self: center;
@@ -11,18 +12,20 @@ const StyledCard = styled.div`
   border: 1.5px solid black;
   font-family: 'Quicksand';
   font-size: 24px;
+  text-align: center;
 `;
 
 const StyledHeader = styled.h1`
   font-family: 'Quicksand';
   font-size: 30px;
+  text-align: center;
 `;
 
 export const About = () => {
   return (
     <StyledCard>
       <StyledHeader>Tervetuloa sivuilleni!</StyledHeader>
-      <br />
+      <StyledLine />
       <p>
         Olen Dima Latvalahti ja valmistuin huhtikuussa 2021
         sisustussuunnittelijaksi Helsinki Design Schoolista.

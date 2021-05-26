@@ -29,8 +29,7 @@ const StyledLabel = styled.label`
 const StyledInput = styled.input`
   font-family: Quicksand;
   font-size: 20px;
-  padding: 4px;
-  border-radius: 8px;
+  padding: 8px;
   border-width: 1px;
   flex-grow: 2;
 `;
@@ -44,7 +43,6 @@ const StyledTextArea = styled.textarea`
   font-family: Quicksand;
   font-size: 20px;
   padding: 8px;
-  border-radius: 8px;
   border-width: 1px;
   margin-left: 12px;
   margin-top: 8px;

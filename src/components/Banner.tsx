@@ -16,14 +16,23 @@ const StyledCard = styled.div`
   font-size: 24px;
 `;
 
+const StyledLink = styled.a`
+  color: grey;
+  text-decoration: none;
+`;
 interface Props {
   text: string;
+  link?: string;
+  linkText?: string;
 }
 
-export const Banner: React.FC<Props> = ({ text }) => {
+export const Banner: React.FC<Props> = ({ text, link, linkText }) => {
   return (
     <StyledCard>
-      <p>{text}</p>
+      <p>
+        {text}
+        {link && <StyledLink href={link}>{linkText}</StyledLink>}
+      </p>
     </StyledCard>
   );
 };

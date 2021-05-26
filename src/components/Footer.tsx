@@ -1,6 +1,11 @@
 import { Link } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
+import {
+  SocialProvider,
+  SocialLink,
+} from '@mui-treasury/components/socialLink';
+import { usePoofSocialLinkStyles } from '@mui-treasury/styles/socialLink/poof';
 
 const StyledFooter = styled.footer`
   background-color: #fdfdfd;
@@ -13,22 +18,30 @@ const StyledFooter = styled.footer`
   text-align: center;
 `;
 
+const StyledLink = styled.a`
+  color: grey;
+  text-decoration: none;
+`;
+
 export const Footer = () => {
   return (
     <StyledFooter>
       <div>
         <p>Interior Design Latvalahti</p>
         <p>
-          <Link href="mailto: interior@designlatvalahti.fi ">
+          <StyledLink href="mailto: interior@designlatvalahti.fi ">
             interior@designlatvalahti.fi
-          </Link>
+          </StyledLink>
         </p>
         <p>
-          <Link href="tel: 0453565554">0453565554</Link>
+          <StyledLink href="tel: 0453565554">0453565554</StyledLink>
         </p>
-        <Link href="https://www.instagram.com/casalautaajabetonia/?hl=fi">
-          Instagram
-        </Link>
+        <SocialProvider useStyles={usePoofSocialLinkStyles}>
+          <SocialLink
+            brand={'Instagram'}
+            href="https://www.instagram.com/casalautaajabetonia/?hl=fi"
+          />
+        </SocialProvider>
         <p>Y-tunnus: 2361455-8</p>
       </div>
     </StyledFooter>
