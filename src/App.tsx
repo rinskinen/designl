@@ -1,17 +1,30 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Gallery } from "./components/Gallery";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { Contact } from "./components/Contact";
-import styled from "styled-components";
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import { Home } from './components/pages/Home';
+import { Services } from './components/pages/Services';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { Contact } from './components/pages/Contact';
+import styled from 'styled-components';
+import { About } from './components/pages/About';
+//import { Portfolio } from './components/Portfolio';
 
 const AppStyled = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: Quicksand !important;
+  @media (min-width: 320px) {
+    margin: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 100px;
+  }
 `;
 
 const App = () => {
@@ -23,13 +36,16 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/aboutme">
+          <Route path="/suunnittelija">
             <About />
           </Route>
-          <Route path="/gallery">
-            <Gallery />
+          <Route path="/palvelut">
+            <Services />
           </Route>
-          <Route path="/contact">
+          {/* <Route path="/portfolio">
+            <Portfolio />
+          </Route> */}
+          <Route path="/otayhteyttä">
             <Contact />
           </Route>
         </Switch>

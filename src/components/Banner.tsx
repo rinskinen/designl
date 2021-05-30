@@ -1,38 +1,44 @@
-import { Link } from "@material-ui/core";
-import * as React from "react";
+import React from 'react';
+import styled from 'styled-components';
 
-const banner = {
-  alignSelf: "center",
-  backgroundColor: "#dbdbdb",
-  fontFamily: "Quicksand",
-  fontSize: 24,
-  display: "grid",
-  aligContent: "center",
-  justifyContent: "center",
-  padding: 50,
-  margin: 100,
-  borderRadius: 8,
-};
+const StyledCard = styled.div`
+  align-self: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border: 1.5px solid black;
+  font-size: 24px;
+  @media (min-width: 320px) {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
 
-const link = {
-  textAlign: "center" as "center",
-  paddingTop: 30,
-};
+  @media (min-width: 1200px) {
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+`;
 
-export const Banner = () => {
+const StyledLink = styled.a`
+  color: grey;
+  text-decoration: none;
+`;
+interface Props {
+  text: string;
+  link?: string;
+  linkText?: string;
+}
+
+export const Banner: React.FC<Props> = ({ text, link, linkText }) => {
   return (
-    <div style={banner}>
+    <StyledCard>
       <p>
-        "I'm baby quinoa butcher dreamcatcher, poutine migas live-edge jean
-        shorts distillery prism hexagon austin meh cold-pressed swag.
+        {text}
+        {link && <StyledLink href={link}>{linkText}</StyledLink>}
       </p>
-      <p>
-        Live-edge skateboard leggings, disrupt migas tumeric readymade mixtape
-        irony waistcoat shaman pork belly selvage pickled."
-      </p>
-      <Link href="/aboutme" style={link}>
-        More about me
-      </Link>
-    </div>
+    </StyledCard>
   );
 };
