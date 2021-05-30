@@ -89,8 +89,7 @@ export default function Form() {
       .sendForm(
         process.env.REACT_APP_SERVICE_ID || '',
         process.env.REACT_APP_TEMPLATE_ID || '',
-        '#contactForm',
-        process.env.REACT_APP_USER_ID,
+        process.env.REACT_APP_USER_ID || '',
       )
       .then(() => {
         alert('Viestisi lähetetty, kiitos!');
