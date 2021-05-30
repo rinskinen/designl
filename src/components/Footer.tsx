@@ -8,7 +8,6 @@ import { usePoofSocialLinkStyles } from '@mui-treasury/styles/socialLink/poof';
 
 const StyledFooter = styled.footer`
   background-color: #fdfdfd;
-  font-family: Quicksand;
   display: grid;
   align-content: center;
   justify-content: center;

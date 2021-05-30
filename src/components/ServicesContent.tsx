@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledLabel = styled.label`
-  font-family: Quicksand;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -38,7 +37,7 @@ export const StyledLine = styled.div`
   border: 1px solid #ddd;
 `;
 
-export const Services = () => {
+export const ServicesContent = () => {
   return (
     <>
       <StyledCard>

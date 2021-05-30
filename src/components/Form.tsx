@@ -29,7 +29,6 @@ const BasicInfo = styled.div`
 
 const StyledLabel = styled.label`
   display: flex;
-  font-family: Quicksand;
   font-size: 24px;
 
   @media (min-width: 320px) {
@@ -79,7 +78,7 @@ const StyledButton = styled.button`
   margin: 12px;
 `;
 
-export default function Form() {
+export const Form = () => {
   const {
     register,
     handleSubmit,
@@ -147,4 +146,4 @@ export default function Form() {
       </StyledButton>
     </StyledForm>
   );
-}
+};

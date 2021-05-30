@@ -1,36 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledLine } from './Services';
+import { StyledLine } from './pages/Services';
 
 const StyledCard = styled.div`
   align-self: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-content: center;
   justify-content: center;
   border: 1.5px solid black;
-  font-family: 'Quicksand';
   font-size: 24px;
-  text-align: center;
-
   @media (min-width: 320px) {
     padding: 20px;
-    margin: 10px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 1200px) {
     padding: 50px;
-    margin: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 `;
 
 const StyledHeader = styled.h1`
-  font-family: 'Quicksand';
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
 `;
 
-export const About = () => {
+export const AboutContent = () => {
   return (
     <StyledCard>
       <StyledHeader>Tervetuloa sivuilleni!</StyledHeader>

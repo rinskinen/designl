@@ -7,7 +7,6 @@ const StyledCard = styled.div`
   align-content: center;
   justify-content: center;
   border: 1.5px solid black;
-  font-family: 'Quicksand';
   font-size: 24px;
   @media (min-width: 320px) {
     padding: 20px;

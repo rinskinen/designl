@@ -4,13 +4,13 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import { Home } from './components/Home';
-import { About } from './components/About';
-import { Services } from './components/Services';
+import { Home } from './components/pages/Home';
+import { Services } from './components/pages/Services';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Contact } from './components/Contact';
+import { Contact } from './components/pages/Contact';
 import styled from 'styled-components';
+import { About } from './components/pages/About';
 //import { Portfolio } from './components/Portfolio';
 
 const AppStyled = styled.div`

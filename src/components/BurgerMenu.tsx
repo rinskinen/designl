@@ -7,7 +7,6 @@ interface Props {
 }
 
 const StyledMenuItem = styled.div`
-  font-family: 'Quicksand';
   color: grey;
   padding-bottom: 20px;
   text-align: center;

@@ -18,8 +18,24 @@ const screenWidth = window.screen.width;
 const screenHeight = window.screen.height;
 
 const StyledCard = styled.div`
-  max-width: 400px;
-  text-align: center;
+  align-self: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border: 1.5px solid black;
+  font-size: 24px;
+  @media (min-width: 320px) {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 `;
 
 const StyledImage = styled.div`
@@ -27,14 +43,12 @@ const StyledImage = styled.div`
 `;
 
 const StyledTitle = styled.label`
-  font-family: Quicksand;
   font-size: 24px;
   padding: 12px;
 `;
 
 const StyledText = styled.p`
-  font-family: Quicksand;
-  font-size: 16px;
+  font-size: 20px;
   padding: 12px;
 `;
 

@@ -8,7 +8,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const HeaderStyled = styled.div`
   background-color: #fdfdfd;
-  font-family: Quicksand;
   display: flex;
   align-content: center;
   justify-content: space-between;
