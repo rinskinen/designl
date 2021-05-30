@@ -7,7 +7,6 @@ import { BurgerMenu } from './BurgerMenu';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const HeaderStyled = styled.div`
-  background-color: #fdfdfd;
   display: flex;
   align-content: center;
   justify-content: space-between;
