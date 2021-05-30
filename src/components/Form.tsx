@@ -78,7 +78,7 @@ const StyledButton = styled.button`
   margin: 12px;
 `;
 
-export const Form = () => {
+export default function Form() {
   const {
     register,
     handleSubmit,
@@ -146,4 +146,4 @@ export const Form = () => {
       </StyledButton>
     </StyledForm>
   );
-};
+}

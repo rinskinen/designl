@@ -60,7 +60,9 @@ export const Header = () => {
     <>
       <HeaderStyled>
         <LogoStyled>
-          <Logo height="100%" width="100%" />
+          <Link href="/">
+            <Logo height="100%" width="100%" />
+          </Link>
         </LogoStyled>
         <BreadcrumbsStyled>
           <Breadcrumbs
