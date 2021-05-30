@@ -73,7 +73,6 @@ const StyledInfo = styled.div`
 const StyledButton = styled.button`
   font-family: Quicksand;
   font-size: 24px;
-  border-radius: 8px;
   padding: 8px;
   margin: 12px;
 `;
