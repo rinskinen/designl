@@ -1,4 +1,3 @@
-import { Link } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
 import {
@@ -13,9 +12,17 @@ const StyledFooter = styled.footer`
   display: grid;
   align-content: center;
   justify-content: center;
-  padding-bottom: 100px;
+
   p: 3px;
   text-align: center;
+  @media (min-width: 320px) {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
 `;
 
 const StyledLink = styled.a`

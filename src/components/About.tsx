@@ -4,15 +4,24 @@ import { StyledLine } from './Services';
 
 const StyledCard = styled.div`
   align-self: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 50px;
-  margin: 100px;
   border: 1.5px solid black;
   font-family: 'Quicksand';
   font-size: 24px;
   text-align: center;
+
+  @media (min-width: 320px) {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 50px;
+    margin: 100px;
+  }
 `;
 
 const StyledHeader = styled.h1`

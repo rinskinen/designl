@@ -4,26 +4,41 @@ import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
 
 const StyledForm = styled.form`
-  @media only screen and (min-width: 992px) {
+  @media (min-width: 320px) {
     width: 100%;
   }
 
-  @media only screen and (min-width: 1200px) {
-    width: 50%;
+  @media (min-width: 1200px) {
+    width: 60%;
   }
   padding-bottom: 100px;
 `;
 
 const BasicInfo = styled.div`
   display: flex;
-  flex-direction: row;
+
   margin-bottom: 14px;
+  @media (min-width: 320px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
 `;
 
 const StyledLabel = styled.label`
+  display: flex;
   font-family: Quicksand;
   font-size: 24px;
-  padding: 12px;
+
+  @media (min-width: 320px) {
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 12px;
+  }
 `;
 
 const StyledInput = styled.input`
@@ -44,9 +59,12 @@ const StyledTextArea = styled.textarea`
   font-size: 20px;
   padding: 8px;
   border-width: 1px;
-  margin-left: 12px;
   margin-top: 8px;
   flex-grow: 3;
+
+  @media (min-width: 1200px) {
+    margin-left: 12px;
+  }
 `;
 
 const StyledInfo = styled.div`

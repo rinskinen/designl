@@ -11,13 +11,22 @@ const StyledLabel = styled.label`
 
 const StyledCard = styled.div`
   align-self: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 50px;
-  margin: 100px;
   border: 1.5px solid black;
   text-align: center;
+
+  @media (min-width: 320px) {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 50px;
+    margin: 30px;
+  }
 `;
 
 export const StyledLine = styled.div`
@@ -31,7 +40,7 @@ export const StyledLine = styled.div`
 
 export const Services = () => {
   return (
-    <div>
+    <>
       <StyledCard>
         <StyledLabel>Pintamateriaali</StyledLabel>
         <StyledLine />
@@ -80,6 +89,6 @@ export const Services = () => {
           räätälöitävissä juuri sinun tarpeittesi mukaan.
         </p>
       </StyledCard>
-    </div>
+    </>
   );
 };

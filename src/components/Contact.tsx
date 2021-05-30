@@ -7,6 +7,14 @@ const ContactStyled = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
+
+  @media (min-width: 320px) {
+    margin: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 100px;
+  }
 `;
 
 export const Contact = () => {

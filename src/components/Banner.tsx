@@ -6,14 +6,21 @@ const StyledCard = styled.div`
   display: grid;
   align-content: center;
   justify-content: center;
-  padding: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   border: 1.5px solid black;
   font-family: 'Quicksand';
   font-size: 24px;
+  @media (min-width: 320px) {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 `;
 
 const StyledLink = styled.a`

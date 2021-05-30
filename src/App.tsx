@@ -17,7 +17,14 @@ const AppStyled = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Quicksand;
+  font-family: Quicksand !important;
+  @media (min-width: 320px) {
+    margin: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 100px;
+  }
 `;
 
 const App = () => {
