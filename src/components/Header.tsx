@@ -35,6 +35,7 @@ const BreadcrumbsStyled = styled.div`
   }
 
   @media (min-width: 1200px) {
+    display: block;
     padding-top: 50px;
     padding-right: 60px;
   }
