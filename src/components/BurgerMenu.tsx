@@ -17,7 +17,7 @@ export const BurgerMenu: React.FC<Props> = ({ open }) => {
   return (
     <>
       {open && (
-        <MenuList>
+        <MenuList style={{ paddingBottom: 50 }}>
           <StyledMenuItem>
             <Link color="inherit" href="/">
               Etusivu

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const StyledHomeDiv = styled.div`
   display: grid;
   align-content: center;
-  justify-content: center;
+  justify-content: stretch;
   flex: 1 1 auto;
   p: 3px;
   text-align: center;
