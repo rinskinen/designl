@@ -10,6 +10,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import styled from 'styled-components';
 import { About } from './components/pages/About';
+import { Contact } from './components/pages/Contact';
 
 const AppStyled = styled.div`
   display: flex;
@@ -39,6 +40,9 @@ const App = () => {
           </Route>
           <Route path="/palvelut">
             <Services />
+          </Route>
+          <Route path="/otayhteyttä">
+            <Contact />
           </Route>
         </Switch>
       </Router>

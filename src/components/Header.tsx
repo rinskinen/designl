@@ -83,6 +83,13 @@ export const Header = () => {
             >
               Palvelut
             </Link>
+            <Link
+              color="inherit"
+              href="/otayhteyttä"
+              aria-current="page"
+            >
+              Ota yhteyttä
+            </Link>
           </Breadcrumbs>
         </BreadcrumbsStyled>
         <MenuIconStyled onClick={() => setOpen(!open)}>
