@@ -7,7 +7,6 @@ import { BurgerMenu } from './BurgerMenu';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const HeaderStyled = styled.div`
-  background-color: #fdfdfd;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -60,7 +59,9 @@ export const Header = () => {
     <>
       <HeaderStyled>
         <LogoStyled>
-          <Logo height="100%" width="100%" />
+          <Link href="/">
+            <Logo height="100%" width="100%" />
+          </Link>
         </LogoStyled>
         <BreadcrumbsStyled>
           <Breadcrumbs
@@ -82,13 +83,6 @@ export const Header = () => {
             >
               Palvelut
             </Link>
-            {/* <Link
-            color="inherit"
-            href="/portfolio"
-            aria-current="page"
-          >
-            Portfolio
-          </Link> */}
             <Link
               color="inherit"
               href="/otayhteyttä"

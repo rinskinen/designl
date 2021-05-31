@@ -15,9 +15,6 @@ const StyledCard = styled.div`
 
   @media (min-width: 1200px) {
     padding: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 `;

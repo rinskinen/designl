@@ -5,8 +5,7 @@ import { AboutContent } from '../AboutContent';
 const StyledAboutPage = styled.div`
   display: grid;
   align-content: center;
-  justify-content: center;
-  background-color: #fdfdfd;
+  justify-content: stretch;
   flex: 1 1 auto;
   p: 3px;
   text-align: center;

@@ -8,10 +8,9 @@ import { Home } from './components/pages/Home';
 import { Services } from './components/pages/Services';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Contact } from './components/pages/Contact';
 import styled from 'styled-components';
 import { About } from './components/pages/About';
-//import { Portfolio } from './components/Portfolio';
+import { Contact } from './components/pages/Contact';
 
 const AppStyled = styled.div`
   display: flex;
@@ -19,11 +18,11 @@ const AppStyled = styled.div`
   min-height: 100vh;
   font-family: Quicksand !important;
   @media (min-width: 320px) {
-    margin: 10px;
+    padding: 10px;
   }
 
   @media (min-width: 1200px) {
-    margin: 100px;
+    padding: 100px;
   }
 `;
 
@@ -42,9 +41,6 @@ const App = () => {
           <Route path="/palvelut">
             <Services />
           </Route>
-          {/* <Route path="/portfolio">
-            <Portfolio />
-          </Route> */}
           <Route path="/otayhteyttä">
             <Contact />
           </Route>

@@ -19,12 +19,12 @@ const StyledCard = styled.div`
 
   @media (min-width: 320px) {
     padding: 20px;
-    margin: 10px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 1200px) {
     padding: 50px;
-    margin: 30px;
+    margin-bottom: 50px;
   }
 `;
 
