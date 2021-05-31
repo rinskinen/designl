@@ -8,10 +8,8 @@ import { Home } from './components/pages/Home';
 import { Services } from './components/pages/Services';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Contact } from './components/pages/Contact';
 import styled from 'styled-components';
 import { About } from './components/pages/About';
-//import { Portfolio } from './components/Portfolio';
 
 const AppStyled = styled.div`
   display: flex;
@@ -41,12 +39,6 @@ const App = () => {
           </Route>
           <Route path="/palvelut">
             <Services />
-          </Route>
-          {/* <Route path="/portfolio">
-            <Portfolio />
-          </Route> */}
-          <Route path="/otayhteyttä">
-            <Contact />
           </Route>
         </Switch>
       </Router>
