@@ -14,6 +14,7 @@ import { Contact } from './components/pages/Contact';
 
 const AppStyled = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   min-height: 100vh;
   font-family: Quicksand !important;
