@@ -3,9 +3,6 @@ import styled from 'styled-components';
 
 const ContactStyled = styled.div`
   display: grid;
-  align-content: center;
-  justify-content: stretch;
-  flex: 1 1 auto;
   p: 3px;
   text-align: center;
 `;
@@ -25,7 +22,6 @@ const StyledCard = styled.div`
   justify-content: center;
   border: 1.5px solid black;
   text-align: center;
-
   @media (min-width: 320px) {
     padding: 20px;
     margin-bottom: 10px;
