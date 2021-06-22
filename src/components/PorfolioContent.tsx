@@ -25,16 +25,21 @@ interface Props {
         id: number;
         image: string;
         name: string;
-    }>
+    }>;
+    targetName: string;
 }
 
-export const PortfolioContent = ({data}: Props) => {
+export const PortfolioContent = ({data, targetName}: Props) => {
     return (
-    <StyledTarget>
-      {data.map((image) => {
-          return (
-            <Image image={image.image} name={image.name} open={false}/>
-          )
-      })}      
-    </StyledTarget>)
+        <>
+        <h1>{targetName}</h1>
+        <StyledTarget>     
+        {data.map((image) => {
+            return (
+                <Image image={image.image} name={image.name} open={false}/>
+            )
+        })}      
+        </StyledTarget>
+    </>
+    )
 }

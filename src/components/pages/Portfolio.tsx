@@ -57,7 +57,7 @@ const StyledPortfolio = styled.div`
 export const Portfolio = () => {
   return (
     <StyledPortfolio>
-      <PortfolioContent data={data} />   
+      <PortfolioContent data={data} targetName='Sensu'/>   
     </StyledPortfolio>
   );
 };
