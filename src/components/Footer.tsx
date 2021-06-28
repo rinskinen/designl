@@ -49,6 +49,12 @@ export const Footer = () => {
         </SocialProvider>
         <p>Y-tunnus: 2361455-8</p>
       </div>
+      <div>
+        Kuvat ottanut{' '}
+        <StyledLink href="http://ateljeemantyniemi.fi/">
+          Mikko Mäntyniemi
+        </StyledLink>
+      </div>
     </StyledFooter>
   );
 };
