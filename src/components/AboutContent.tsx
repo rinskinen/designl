@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import image1 from '../images/LatvalahtiDima07.jpg';
+import image1 from '../images/LatvalahtiDima28.jpg';
 
 const StyledContent = styled.div`
   display: flex;
