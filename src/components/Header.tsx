@@ -76,6 +76,9 @@ export const Header = () => {
             <Link color="inherit" href="/suunnittelija">
               Suunnittelija
             </Link>
+            <Link color="inherit" href="/portfolio">
+              Portfolio
+            </Link>
             <Link
               color="inherit"
               href="/palvelut"

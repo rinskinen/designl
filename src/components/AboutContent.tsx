@@ -19,7 +19,7 @@ const StyledCard = styled.div`
   display: grid;
   align-content: center;
   justify-content: center;
-  font-size: 24px;
+
   @media (min-width: 320px) {
     padding: 20px;
     margin-bottom: 10px;
@@ -31,9 +31,20 @@ const StyledCard = styled.div`
   }
 `;
 
-const StyledHeader = styled.h1`
+const StyledLabel = styled.label`
   font-size: 24px;
+  font-weight: bold;
   text-align: center;
+  margin-bottom: 10px;
+`;
+
+export const StyledLine = styled.div`
+  align-self: center;
+  width: 50px;
+  height: 1px;
+  background-color: inherit;
+  margin: 8px auto;
+  border: 1px solid #ddd;
 `;
 
 const StyledImage = styled.img`
@@ -58,7 +69,8 @@ export const AboutContent = () => {
     <StyledContent>
       <StyledImage src={image1} alt="Dima Latvalahti" width="50%" />
       <StyledCard>
-        <StyledHeader>Tervetuloa sivuilleni!</StyledHeader>
+        <StyledLabel>Tervetuloa sivuilleni!</StyledLabel>
+        <StyledLine />
         <p>
           Olen Dima Latvalahti ja valmistuin huhtikuussa 2021
           sisustussuunnittelijaksi Helsinki Design Schoolista.

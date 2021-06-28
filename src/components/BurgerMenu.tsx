@@ -31,6 +31,15 @@ export const BurgerMenu: React.FC<Props> = ({ open }) => {
           <StyledMenuItem>
             <Link
               color="inherit"
+              href="/portfolio"
+              aria-current="page"
+            >
+              Portfolio
+            </Link>
+          </StyledMenuItem>
+          <StyledMenuItem>
+            <Link
+              color="inherit"
               href="/palvelut"
               aria-current="page"
             >

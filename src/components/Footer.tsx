@@ -50,7 +50,7 @@ export const Footer = () => {
         <p>Y-tunnus: 2361455-8</p>
       </div>
       <div>
-        Kuvat ottanut{' '}
+        Kuvat:{' '}
         <StyledLink href="http://ateljeemantyniemi.fi/">
           Mikko Mäntyniemi
         </StyledLink>
