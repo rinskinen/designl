@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import image1 from '../images/LatvalahtiDima07.jpg';
 
 const StyledContent = styled.div`
   display: flex;
@@ -55,11 +56,7 @@ const StyledImage = styled.img`
 export const AboutContent = () => {
   return (
     <StyledContent>
-      <StyledImage
-        src="../public/images/LatvalahtiDima07.jpg"
-        alt="Dima Latvalahti"
-        width="50%"
-      />
+      <StyledImage src={image1} alt="Dima Latvalahti" width="50%" />
       <StyledCard>
         <StyledHeader>Tervetuloa sivuilleni!</StyledHeader>
         <p>
