@@ -1,47 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import {PortfolioContent} from '../PorfolioContent'
-
-const data = [{
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-}, {
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-}, {
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-}, {
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-}, {
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-},{
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-},{
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-},{
-  id: 1,
-  name: "Sensu1",
-  image: "https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu.jpg"
-}]
+import { PortfolioContent } from '../PorfolioContent';
 
 const StyledPortfolio = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  align-content: center;
   justify-content: center;
-  position: relative;
+  p: 3px;
+  text-align: center;
 
   @media (min-width: 320px) {
     padding: 20px;
@@ -57,7 +23,10 @@ const StyledPortfolio = styled.div`
 export const Portfolio = () => {
   return (
     <StyledPortfolio>
-      <PortfolioContent data={data} targetName='Sensu'/>   
+      <PortfolioContent
+        title="Talo Sensu"
+        info="Asuntomessut 2021 Lohja"
+      />
     </StyledPortfolio>
   );
 };
