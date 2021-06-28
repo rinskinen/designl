@@ -49,7 +49,7 @@ export const Home = () => {
         alt="Talo Sensu"
         width="100%"
       />
-      <StyledImageRow>
+      {/* <StyledImageRow>
         <StyledImage
           src="https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/sensu/TaloSensu10.jpg"
           alt="Talo Sensu"
@@ -60,10 +60,10 @@ export const Home = () => {
           alt="Talo Sensu"
           width="50%"
         />
-      </StyledImageRow>
+      </StyledImageRow> */}
       <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkitiloihin." />
       <StyledImage
-        src="https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/LatvalahtiDima2.jpg"
+        src="../public/images/LatvalahtiDima2.jpg"
         alt="Dima Latvalahti"
         width="100%"
       />

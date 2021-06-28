@@ -56,7 +56,7 @@ export const AboutContent = () => {
   return (
     <StyledContent>
       <StyledImage
-        src="https://webdisk.designlatvalahti.fi/public_html/designlatvalahti/images/LatvalahtiDima.jpg"
+        src="../public/images/LatvalahtiDima07.jpg"
         alt="Dima Latvalahti"
         width="50%"
       />
