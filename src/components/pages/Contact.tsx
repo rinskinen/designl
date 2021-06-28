@@ -54,8 +54,11 @@ export const Contact = () => {
         <StyledLabel>Ota yhteyttä</StyledLabel>
         <StyledLine />
         <p>
-          Ota yhteyttä ja jutellaan lisää toiveistasi! Minuun voi olla
-          yhteydessä{' '}
+          Ota yhteyttä ja jutellaan lisää sinun toiveistasi ja kuinka
+          voin sinua auttaa.
+        </p>
+        <p>
+          Minuun voi olla yhteydessä{' '}
           <StyledLink href="mailto: interior@designlatvalahti.fi ">
             sähköpostitse
           </StyledLink>
@@ -64,7 +67,7 @@ export const Contact = () => {
             {' '}
             soittamalla{' '}
           </StyledLink>
-          tai jopa WhatsApp-viestein!
+          tai WhatsApp-viestein.
         </p>
       </StyledCard>
     </ContactStyled>
