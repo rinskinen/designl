@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import sensu1 from '../../images/TaloSensu2.jpg';
 import sensu2 from '../../images/TaloSensu10.jpg';
 import sensu3 from '../../images/TaloSensu11.jpg';
-import image1 from '../../images/LatvalahtiDima2.jpg';
+import image from '../../images/LatvalahtiDima93.jpg';
 
 const StyledHomeDiv = styled.div`
   display: grid;
@@ -54,7 +54,11 @@ export const Home = () => {
         <StyledImage src={sensu3} alt="Talo Sensu" width="50%" />
       </StyledImageRow>
       <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkitiloihin." />
-      <StyledImage src={image1} alt="Dima Latvalahti" width="100%" />
+      <StyledImage
+        src={image}
+        alt="Kuva työvälineistä"
+        width="100%"
+      />
     </StyledHomeDiv>
   );
 };
