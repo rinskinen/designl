@@ -6,7 +6,6 @@ const StyledCard = styled.div`
   display: grid;
   align-content: center;
   justify-content: center;
-  border: 1.5px solid black;
   font-size: 24px;
   @media (min-width: 320px) {
     padding: 20px;
