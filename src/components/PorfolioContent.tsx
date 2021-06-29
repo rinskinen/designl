@@ -19,7 +19,6 @@ import image16 from '../images/TaloSensu53.jpg';
 import image17 from '../images/TaloSensu65.jpg';
 import image18 from '../images/TaloSensu67.jpg';
 import image19 from '../images/TaloSensu70.jpg';
-import image20 from '../images/TaloSensu74.jpg';
 import image21 from '../images/TaloSensu62.jpg';
 
 const StyledCard = styled.div`
@@ -133,7 +132,6 @@ export const PortfolioContent = ({ title, info }: Props) => {
           <StyledImage src={image18} alt="Talo Sensu" width="50%" />
         </StyledImageRow>
         <StyledImage src={image19} alt="Talo Sensu" width="100%" />
-        <StyledImage src={image20} alt="Talo Sensu" width="100%" />
         <StyledImageRow>
           <StyledImage src={image21} alt="Talo Sensu" width="50%" />
         </StyledImageRow>
