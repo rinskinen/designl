@@ -84,7 +84,7 @@ export const ServicesContent = () => {
         <StyledLine />
         <p>
           Hinta riippuu työn sisällöstä ja laajuudesta. Annan
-          mielleläni tarjouksen työstäni. Hinta ja sisältö ovat
+          mielelläni tarjouksen työstäni. Hinta ja sisältö ovat
           räätälöitävissä juuri sinun tarpeittesi mukaan.
         </p>
       </StyledCard>

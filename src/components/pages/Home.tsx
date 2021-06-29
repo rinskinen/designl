@@ -53,7 +53,7 @@ export const Home = () => {
         <StyledImage src={sensu2} alt="Talo Sensu" width="50%" />
         <StyledImage src={sensu3} alt="Talo Sensu" width="50%" />
       </StyledImageRow>
-      <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkitiloihin." />
+      <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkistiloihin." />
       <StyledImage
         src={image}
         alt="Kuva työvälineistä"
