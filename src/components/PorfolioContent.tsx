@@ -1,25 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import image1 from '../images/TaloSensu20.jpg';
-import image2 from '../images/Koivui02.jpg';
-import image3 from '../images/TaloSensu10.jpg';
-import image4 from '../images/TaloSensu05.jpg';
-import image5 from '../images/TaloSensu07.jpg';
-import image6 from '../images/TaloSensu11.jpg';
-import image7 from '../images/TaloSensu43.jpg';
-import image8 from '../images/TaloSensu15.jpg';
-import image9 from '../images/TaloSensu2.jpg';
-import image10 from '../images/TaloSensu19.jpg';
-import image11 from '../images/TaloSensu21.jpg';
-import image12 from '../images/TaloSensu31.jpg';
-import image13 from '../images/TaloSensu36.jpg';
-import image14 from '../images/TaloSensu38.jpg';
-import image15 from '../images/TaloSensu52.jpg';
-import image16 from '../images/TaloSensu53.jpg';
-import image17 from '../images/TaloSensu65.jpg';
-import image18 from '../images/TaloSensu67.jpg';
-import image19 from '../images/TaloSensu70.jpg';
-import image21 from '../images/TaloSensu62.jpg';
 
 const StyledCard = styled.div`
   align-self: center;
@@ -103,38 +83,151 @@ export const PortfolioContent = ({ title, info }: Props) => {
         <p>{info}</p>
       </StyledCard>
       <>
-        <StyledImage src={image1} alt="Talo Sensu" width="100%" />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_20.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
         <StyledImageRow>
-          <StyledImage src={image2} alt="Talo Sensu" width="50%" />
-          <StyledImage src={image3} alt="Talo Sensu" width="50%" />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Koivui02.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_10.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
         </StyledImageRow>
-        <StyledImage src={image4} alt="Talo Sensu" width="100%" />
-        <StyledImage src={image5} alt="Talo Sensu" width="100%" />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_05.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_07.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
         <StyledImageRow>
-          <StyledImage src={image6} alt="Talo Sensu" width="50%" />
-          <StyledImage src={image7} alt="Talo Sensu" width="50%" />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_11.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_43.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
         </StyledImageRow>
-        <StyledImage src={image8} alt="Talo Sensu" width="100%" />
-        <StyledImage src={image9} alt="Talo Sensu" width="100%" />
-        <StyledImage src={image10} alt="Talo Sensu" width="100%" />
-        <StyledImage src={image11} alt="Talo Sensu" width="100%" />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu15.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/SENSU_olohuone.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_19.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_21.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
         <StyledImageRow>
-          <StyledImage src={image12} alt="Talo Sensu" width="50%" />
-          <StyledImage src={image13} alt="Talo Sensu" width="50%" />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_31.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_36.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
         </StyledImageRow>
-        <StyledImage src={image14} alt="Talo Sensu" width="100%" />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_38.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
         <StyledImageRow>
-          <StyledImage src={image15} alt="Talo Sensu" width="50%" />
-          <StyledImage src={image16} alt="Talo Sensu" width="50%" />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_52.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_53.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
         </StyledImageRow>
         <StyledImageRow>
-          <StyledImage src={image17} alt="Talo Sensu" width="50%" />
-          <StyledImage src={image18} alt="Talo Sensu" width="50%" />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_65.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
+          <StyledImage
+            src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_67.jpg"
+            alt="Talo Sensu"
+            width="50%"
+          />
         </StyledImageRow>
-        <StyledImage src={image19} alt="Talo Sensu" width="100%" />
-        <StyledImageRow>
-          <StyledImage src={image21} alt="Talo Sensu" width="50%" />
-        </StyledImageRow>
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_70.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Portaat.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Poyta.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Makuuhuone_2.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Keittio.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Suihkut.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_70.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_makuuhuone.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_huone1.jpg"
+          alt="Talo Sensu"
+          width="100%"
+        />
       </>
     </>
   );
