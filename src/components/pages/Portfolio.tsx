@@ -25,7 +25,7 @@ export const Portfolio = () => {
     <StyledPortfolio>
       <PortfolioContent
         title="Talo Sensu"
-        info="Asuntomessut 2021 Lohja"
+        info="Asuntomessut 2021 Lohja - kiintokalusteet, pintamateriaalit, irtokalusteet, tekstiilit, valaistus ja stailaus"
       />
     </StyledPortfolio>
   );

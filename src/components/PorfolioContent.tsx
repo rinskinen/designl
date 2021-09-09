@@ -60,12 +60,10 @@ const StyledImageRow = styled.div`
 
   @media (min-width: 320px) {
     padding-right: 20px;
-    margin-bottom: 10px;
   }
 
   @media (min-width: 1200px) {
     padding-right: 50px;
-    margin-bottom: 50px;
   }
 `;
 
@@ -220,11 +218,6 @@ export const PortfolioContent = ({ title, info }: Props) => {
         />
         <StyledImage
           src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_makuuhuone.jpg"
-          alt="Talo Sensu"
-          width="100%"
-        />
-        <StyledImage
-          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_huone1.jpg"
           alt="Talo Sensu"
           width="100%"
         />
