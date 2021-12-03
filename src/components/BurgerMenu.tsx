@@ -11,6 +11,7 @@ const StyledMenuItem = styled.div`
   padding-bottom: 20px;
   text-align: center;
   font-size: 24px;
+  cursor: pointer;
 `;
 
 export const BurgerMenu: React.FC<Props> = ({ open }) => {

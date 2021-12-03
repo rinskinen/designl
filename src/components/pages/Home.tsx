@@ -1,10 +1,6 @@
 import React from 'react';
 import { Banner } from '../Banner';
 import styled from 'styled-components';
-import sensu1 from '../../images/TaloSensu2.jpg';
-import sensu2 from '../../images/TaloSensu10.jpg';
-import sensu3 from '../../images/TaloSensu11.jpg';
-import image from '../../images/LatvalahtiDima93.jpg';
 
 const StyledHomeDiv = styled.div`
   display: grid;
@@ -48,14 +44,26 @@ const StyledImageRow = styled.div`
 export const Home = () => {
   return (
     <StyledHomeDiv>
-      <StyledImage src={sensu1} alt="Talo Sensu" width="100%" />
+      <StyledImage
+        src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_2.jpg"
+        alt="Talo Sensu"
+        width="100%"
+      />
       <StyledImageRow>
-        <StyledImage src={sensu2} alt="Talo Sensu" width="50%" />
-        <StyledImage src={sensu3} alt="Talo Sensu" width="50%" />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_10.jpg"
+          alt="Talo Sensu"
+          width="50%"
+        />
+        <StyledImage
+          src="https://kuvat.designlatvalahti.fi/images/sensu/Sensu_11.jpg"
+          alt="Talo Sensu"
+          width="50%"
+        />
       </StyledImageRow>
       <Banner text="Sisustussuunnittelua yksityiskoteihin ja julkistiloihin." />
       <StyledImage
-        src={image}
+        src="https://kuvat.designlatvalahti.fi/images/misc/LatvalahtiDima93.jpg"
         alt="Kuva työvälineistä"
         width="100%"
       />
