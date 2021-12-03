@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { PortfolioContent } from '../PorfolioContent';
+import { Fajo } from './Fajo';
+import { Sensu } from './Sensu';
 
-const StyledPortfolio = styled.div`
-  display: grid;
+const StyledCardButton = styled.div`
+  align-self: center;
+  display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  p: 3px;
+  border: 1.5px solid black;
   text-align: center;
+  font-family: Quicksand !important;
+  cursor: pointer;
 
   @media (min-width: 320px) {
     padding: 20px;
@@ -20,13 +25,35 @@ const StyledPortfolio = styled.div`
   }
 `;
 
+const StyledLabel = styled.label`
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+`;
+
 export const Portfolio = () => {
+  const [page, setPage] = useState('');
   return (
-    <StyledPortfolio>
-      <PortfolioContent
-        title="Talo Sensu"
-        info="Asuntomessut 2021 Lohja - kiintokalusteet, pintamateriaalit, irtokalusteet, tekstiilit, valaistus ja stailaus"
-      />
-    </StyledPortfolio>
+    <>
+      {page === '' ? (
+        <>
+          <StyledCardButton onClick={() => setPage('Sensu')}>
+            <StyledLabel>Talo Sensu</StyledLabel>
+          </StyledCardButton>
+          <StyledCardButton onClick={() => setPage('Wihuri')}>
+            <StyledLabel>Wihuri Metro-tukku</StyledLabel>
+          </StyledCardButton>
+        </>
+      ) : page === 'Sensu' ? (
+        <Sensu
+          title="Talo Sensu"
+          info="Asuntomessut 2021 Lohja - kiintokalusteet, pintamateriaalit, irtokalusteet, tekstiilit, valaistus ja stailaus"
+        />
+      ) : (
+        <Fajo title="Wihuri Metro-tukku" />
+      )}
+    </>
   );
 };
